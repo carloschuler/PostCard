@@ -83,15 +83,6 @@
                                     <rect key="frame" x="12" y="313" width="297" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nigga" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCt-LT-qmH">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="288" height="107"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" alpha="0.64999999999999969" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daU-W2-nfB">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.58116705174284244" blue="0.056725511789444849" alpha="1" colorSpace="calibratedRGB"/>
@@ -99,12 +90,30 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="237" width="46" height="30"/>
+                                    <rect key="frame" x="16" y="237" width="100" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPushed:" destination="5af-TI-gjE" eventType="touchUpInside" id="b48-gt-wUq"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nigga" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCt-LT-qmH">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="125" width="288" height="54"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-S3-438">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="96" width="288" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,8 +121,9 @@
                                 <exclude reference="gQa-DJ-Rui"/>
                                 <exclude reference="5df-iP-vU8"/>
                                 <exclude reference="K24-h5-PSC"/>
-                                <exclude reference="JCt-LT-qmH"/>
                                 <exclude reference="daU-W2-nfB"/>
+                                <exclude reference="JCt-LT-qmH"/>
+                                <exclude reference="jl3-S3-438"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,8 +131,9 @@
                                 <include reference="gQa-DJ-Rui"/>
                                 <include reference="5df-iP-vU8"/>
                                 <include reference="K24-h5-PSC"/>
-                                <include reference="JCt-LT-qmH"/>
                                 <include reference="daU-W2-nfB"/>
+                                <include reference="JCt-LT-qmH"/>
+                                <include reference="jl3-S3-438"/>
                             </mask>
                         </variation>
                     </view>
@@ -133,6 +144,7 @@
                         <outlet property="enterNameTextField" destination="5df-iP-vU8" id="91G-aN-J6q"/>
                         <outlet property="mailButton" destination="daU-W2-nfB" id="oqX-hD-XHs"/>
                         <outlet property="messageLabel" destination="JCt-LT-qmH" id="nkB-5w-OKw"/>
+                        <outlet property="nameLabel" destination="jl3-S3-438" id="1Df-5a-YO6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77o-h5-XmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
